@@ -1,0 +1,64 @@
+{
+  "name": "gs-ur-js",
+  "version": "1.0.0",
+  "description": "The UR protocol of GSWallet.",
+  "keywords": ["GSWallet", "UR", "javascript", "SDK"],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "clean": "rimraf coverage build tmp dist",
+    "test": "node test",
+    "test:watch": "jest --watch",
+    "build": "tsc -p tsconfig.json && copy src\\cbor\\cbor-sync.d.ts dist\\cbor && copy src\\cbor\\cbor-sync.js dist\\cbor",
+    "build:purescript": "webpack --config webpack.config.js",
+    "build:release": "yarn run clean && yarn run build && yarn run build:purescript",
+    "bundle": "webpack"
+  },
+  "dependencies": {
+    "@ngraveio/bc-ur": "^1.1.13",
+    "cbor-x": "^1.6.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "@types/uuid": "^10.0.0",
+    "babel-loader": "^9.2.1",
+    "bitcoinjs-lib": "^6.1.7",
+    "bs58": "^6.0.0",
+    "bs58check": "^2.1.2",
+    "jest": "^29.7.0",
+    "node-polyfill-webpack-plugin": "^4.1.0",
+    "process": "^0.11.10",
+    "rimraf": "^6.0.1",
+    "stream-browserify": "^3.0.0",
+    "ts-jest": "^29.2.5",
+    "tslib": "^2.3.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ]
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

@@ -1,0 +1,50 @@
+export declare class RegistryType {
+    private type;
+    private tag?;
+    constructor(type: string, tag?: number | undefined);
+    getTag: () => number | undefined;
+    getType: () => string;
+}
+export declare const RegistryTypes: {
+    UUID: RegistryType;
+    BYTES: RegistryType;
+    CRYPTO_HDKEY: RegistryType;
+    CRYPTO_KEYPATH: RegistryType;
+    CRYPTO_COIN_INFO: RegistryType;
+    CRYPTO_ECKEY: RegistryType;
+    CRYPTO_ADDRESS: RegistryType;
+    CRYPTO_OUTPUT: RegistryType;
+    CRYPTO_PSBT: RegistryType;
+    CRYPTO_ACCOUNT: RegistryType;
+};
+export declare const ExtendedRegistryTypes: {
+    CRYPTO_MULTI_ACCOUNTS: RegistryType;
+    QR_HARDWARE_CALL: RegistryType;
+    KEY_DERIVATION_CALL: RegistryType;
+    KEY_DERIVATION_SCHEMA: RegistryType;
+    GS_SIGN_REQUEST: RegistryType;
+    GS_SIGNATURE: RegistryType;
+    GS_VERIFY_REQUEST: RegistryType;
+    GS_VERIFY_RESPONSE: RegistryType;
+    CRYPTO_TXELEMENT: RegistryType;
+    CRYPTO_GSPL: RegistryType;
+    CRYPTO_TXENTITY: RegistryType;
+    ETH_SIGN_REQUEST: RegistryType;
+    ETH_SIGNATURE: RegistryType;
+    ETH_NFT_ITEM: RegistryType;
+    PSBT_SIGN_REQUEST: RegistryType;
+    PSBT_SIGNATURE: RegistryType;
+    BTC_SIGN_REQUEST: RegistryType;
+    BTC_SIGNATURE: RegistryType;
+    ALPH_SIGN_REQUEST: RegistryType;
+    ALPH_SIGNATURE: RegistryType;
+    BTC_INSCRIBE_REQUEST: RegistryType;
+    BTC_INSCRIBE_SIGNATURE: RegistryType;
+    SOL_SIGN_REQUEST: RegistryType;
+    SOL_SIGNATURE: RegistryType;
+    SOL_NFT_ITEM: RegistryType;
+    COSMOS_SIGN_REQUEST: RegistryType;
+    COSMOS_SIGNATURE: RegistryType;
+    TRON_SIGN_REQUEST: RegistryType;
+    TRON_SIGNATURE: RegistryType;
+};
