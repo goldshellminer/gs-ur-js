@@ -19,6 +19,7 @@ class AlphSignRequest extends RegistryItem_1.RegistryItem {
         super();
         this.uuid = params.uuid;
         this.data = params.data;
+        // this.dataType = params.dataType;
         this.derivationPath = params.derivationPath;
         this.outputs = params.outputs;
         this.origin = params.origin;

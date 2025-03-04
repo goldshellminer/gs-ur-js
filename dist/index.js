@@ -93,7 +93,8 @@ Object.defineProperty(exports, "UR", { enumerable: true, get: function () { retu
 __exportStar(require("./cbor"), exports);
 __exportStar(require("./patchCBOR"), exports);
 __exportStar(require("./registry/CryptoGspl"), exports);
-__exportStar(require("./registry/eth"), exports);
+__exportStar(require("./registry/eth/EthSignRequest"), exports);
+__exportStar(require("./registry/eth/EthSignature"), exports);
 __exportStar(require("./registry/sol/SolSignRequest"), exports);
 __exportStar(require("./registry/sol/SolSignature"), exports);
 __exportStar(require("./registry/alph/AlphSignRequest"), exports);

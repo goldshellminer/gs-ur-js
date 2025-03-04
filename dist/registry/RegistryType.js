@@ -54,39 +54,4 @@ exports.ExtendedRegistryTypes = {
     TRON_SIGN_REQUEST: new RegistryType("tron-sign-request", 1301),
     TRON_SIGNATURE: new RegistryType("tron-signature", 1302),
 };
-// export class ExtendedRegistryTypes extends RegistryType {
-//   constructor(type: string, tag?: number) {
-//     super(type, tag);
-//   }
-//   static CRYPTO_MULTI_ACCOUNTS = new RegistryType("crypto-multi-accounts", 1103);
-//   static QR_HARDWARE_CALL = new RegistryType("qr-hardware-call", 1201);
-//   static KEY_DERIVATION_CALL = new RegistryType("key-derivation-call", 1301);
-//   static KEY_DERIVATION_SCHEMA = new RegistryType("key-derivation-schema", 1302);
-//   static GS_SIGN_REQUEST = new RegistryType("gs-sign-request", 6101);
-//   static GS_SIGNATURE = new RegistryType("gs-signature", 6102);
-//   static GS_VERIFY_REQUEST = new RegistryType("gs-verify-request", 6107);
-//   static GS_VERIFY_RESPONSE = new RegistryType("gs-verify-response", 6108);
-//   static CRYPTO_TXELEMENT = new RegistryType("crypto-txelement", 6110);
-//   static CRYPTO_GSPL = new RegistryType("gspl", 6111);
-//   static CRYPTO_TXENTITY = new RegistryType("crypto-txentity", 6112);
-//   static ETH_SIGN_REQUEST = new RegistryType("eth-sign-request", 401);
-//   static ETH_SIGNATURE = new RegistryType("eth-signature", 402);
-//   static ETH_NFT_ITEM = new RegistryType("eth-nft-item", 403);
-//   static PSBT_SIGN_REQUEST = new RegistryType("psbt-sign-request", 8101);
-//   static PSBT_SIGNATURE = new RegistryType("psbt-signature", 8102);
-//   static BTC_SIGN_REQUEST = new RegistryType("btc-sign-request", 8103);
-//   static BTC_SIGNATURE = new RegistryType("btc-signature", 8104);
-//   static ALPH_SIGN_REQUEST = new RegistryType("alph-sign-request", 8110);
-//   static ALPH_SIGNATURE = new RegistryType("alph-signature", 8111);
-//   // DELETE
-//   static BTC_INSCRIBE_REQUEST = new RegistryType("btc-inscribe-request", 8105);
-//   static BTC_INSCRIBE_SIGNATURE = new RegistryType("btc-inscribe-signature", 8106);
-//   static SOL_SIGN_REQUEST = new RegistryType("sol-sign-request", 1101);
-//   static SOL_SIGNATURE = new RegistryType("sol-signature", 1102);
-//   static SOL_NFT_ITEM = new RegistryType("sol-nft-item", 1104);
-//   static COSMOS_SIGN_REQUEST = new RegistryType("cosmos-sign-request", 1201);
-//   static COSMOS_SIGNATURE = new RegistryType("cosmos-signature", 1202);
-//   static TRON_SIGN_REQUEST = new RegistryType("tron-sign-request", 1301);
-//   static TRON_SIGNATURE = new RegistryType("tron-signature", 1302);
-// }
 //# sourceMappingURL=RegistryType.js.map

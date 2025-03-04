@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "The UR protocol of GSWallet.",
   "keywords": ["GSWallet", "UR", "javascript", "SDK"],
-  "author": "",
+  "author": "goldshellofficial@gmail.com",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/goldshellminer/gs-ur-js.git/"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
